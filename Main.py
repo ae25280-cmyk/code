@@ -176,13 +176,13 @@ class MainApp:
             self.save_data()
             self.update_listbox()
             self.remove_item_entry.delete(0, tk.END)
-            messagebox.showinfo("Success", "Item has been successfully marked as returned.")
+            messagebox.showinfo("Success", "Item has been successfully returned.")
 
     def show_welcome_message(self):
-        messagebox.showinfo("Welcome", "Welcome to the Party Hire Management System.\nUse this interface to log or return customer hires.")
+        messagebox.showinfo("Welcome", "Welcome to the Party Hire Store.\nUse The interface to take out or return hires.")
 
     def on_closing(self):
-        if messagebox.askokcancel("Exit Application", "Are you sure you want to close the system?"):
+        if messagebox.askokcancel("Exit Application", "Are you sure you want to close the store?"):
             self.root.destroy()
 
 if __name__ == "__main__":
